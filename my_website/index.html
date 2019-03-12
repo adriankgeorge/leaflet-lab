@@ -7,6 +7,7 @@
 		<title> Leaflet Lab </title>
 
 		<!--external stylesheet links-->
+		<link rel="stylesheet" href="lib/leaflet/leaflet.css">
 		<link rel="stylesheet" href="css/style.css">
 		<!--[if IE<9]>
 			<link rel="stylesheet" href="css/style.ie.css">
@@ -14,15 +15,24 @@
 	</head>
 
 	<body>
+
+
 		<!--initial page content here-->
-		<div id="mydiv"></div>
+		 <div id="mapid"></div>
+		<!--<div id="mydiv"></div>-->
 		<!--internal scripts or stylesheets;
 		place these within <script> or <style> tags-->
-			<script>
-				var mydiv = document.getElementById("mydiv");
-			</script>
+<!--<script>
+			var mymap = L.map('mymap').setView([51.505, -0.09], 13);
+		</script>-->
+
+	<!--	<script>
+		var mydiv = document.getElementById("mydiv");
+	</script>-->
 		<!--put your external script links here-->
 		<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="lib/leaflet/leaflet.js"></script>
+		<script type="text/javascript" src="js/geojson.js"></script>
+		</script>
 	</body>
 </html>

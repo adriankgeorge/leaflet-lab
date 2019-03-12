@@ -1,0 +1,1271 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.80894469999998,
+          35.6832085
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "yr1970": 23.3,
+        "city": "Tokyo",
+        "yr1990": 32.53,
+        "yr1985": 30.3,
+        "yr1975": 26.61,
+        "yr1980": 28.55,
+        "yr1995": 33.59,
+        "label": "Tokyo",
+        "yr2005": 35.62,
+        "yr2000": 34.45,
+        "yr2010": 36.67,
+        "id": 1
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.2008133,
+          28.608280199999996
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "yr1970": 3.53,
+        "city": "New_Delhi",
+        "yr1990": 9.73,
+        "yr1985": 7.33,
+        "yr1975": 4.43,
+        "yr1980": 5.56,
+        "yr1995": 12.41,
+        "label": "New Delhi",
+        "yr2005": 19.49,
+        "yr2000": 15.73,
+        "yr2010": 22.16,
+        "id": 2
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6546402,
+          -23.5628395
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "yr1970": 7.62,
+        "city": "Sao_Paulo",
+        "yr1990": 14.78,
+        "yr1985": 13.39,
+        "yr1975": 9.61,
+        "yr1980": 12.09,
+        "yr1995": 15.95,
+        "label": "Sao Paulo",
+        "yr2005": 18.65,
+        "yr2000": 17.1,
+        "yr2010": 20.26,
+        "id": 3
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8300934,
+          18.93013
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "yr1970": 5.81,
+        "city": "Mumbai",
+        "yr1990": 12.31,
+        "yr1985": 10.34,
+        "yr1975": 7.08,
+        "yr1980": 8.66,
+        "yr1995": 14.11,
+        "label": "Mumbai",
+        "yr2005": 18.21,
+        "yr2000": 16.09,
+        "yr2010": 20.04,
+        "id": 4
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1331635,
+          19.4319592
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "yr1970": 8.77,
+        "city": "Mexico_City",
+        "yr1990": 15.31,
+        "yr1985": 14.11,
+        "yr1975": 10.69,
+        "yr1980": 13.01,
+        "yr1995": 16.81,
+        "label": "Mexico City",
+        "yr2005": 18.73,
+        "yr2000": 18.02,
+        "yr2010": 19.46,
+        "id": 5
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.83270259999999,
+          40.7820015
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "yr1970": 16.19,
+        "city": "New_York",
+        "yr1990": 16.09,
+        "yr1985": 15.83,
+        "yr1975": 15.88,
+        "yr1980": 15.6,
+        "yr1995": 16.94,
+        "label": "New York",
+        "yr2005": 18.73,
+        "yr2000": 17.85,
+        "yr2010": 19.43,
+        "id": 6
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4747009,
+          31.255159399999997
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "yr1970": 6.04,
+        "city": "Shanghai",
+        "yr1990": 7.82,
+        "yr1985": 6.85,
+        "yr1975": 5.63,
+        "yr1980": 5.97,
+        "yr1995": 10.17,
+        "label": "Shanghai",
+        "yr2005": 15.18,
+        "yr2000": 13.22,
+        "yr2010": 16.58,
+        "id": 7
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3707809,
+          22.5650902
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "yr1970": 6.93,
+        "city": "Kolkata",
+        "yr1990": 10.89,
+        "yr1985": 9.95,
+        "yr1975": 7.89,
+        "yr1980": 9.03,
+        "yr1995": 11.92,
+        "label": "Kolkata",
+        "yr2005": 14.28,
+        "yr2000": 13.06,
+        "yr2010": 15.55,
+        "id": 8
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.39956670000001,
+          23.7132301
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "yr1970": 0,
+        "city": "Dhaka",
+        "yr1990": 6.62,
+        "yr1985": 4.66,
+        "yr1975": 0,
+        "yr1980": 0,
+        "yr1995": 8.33,
+        "label": "Dhaka",
+        "yr2005": 12.56,
+        "yr2000": 10.28,
+        "yr2010": 14.65,
+        "id": 9
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          67.0343704,
+          24.9267101
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "yr1970": 0,
+        "city": "Karachi",
+        "yr1990": 7.15,
+        "yr1985": 6.03,
+        "yr1975": 3.99,
+        "yr1980": 5.05,
+        "yr1995": 8.47,
+        "label": "Karachi",
+        "yr2005": 11.62,
+        "yr2000": 10.02,
+        "yr2010": 13.12,
+        "id": 10
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.3734894,
+          -34.6085091
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "yr1970": 8.1,
+        "city": "Buenos_Aires",
+        "yr1990": 10.51,
+        "yr1985": 9.96,
+        "yr1975": 8.74,
+        "yr1980": 9.42,
+        "yr1995": 11.15,
+        "label": "Buenos Aires",
+        "yr2005": 12.55,
+        "yr2000": 11.85,
+        "yr2010": 13.07,
+        "id": 11
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2453232,
+          34.05348970000001
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "yr1970": 8.38,
+        "city": "Los_Angeles",
+        "yr1990": 10.88,
+        "yr1985": 10.18,
+        "yr1975": 8.93,
+        "yr1980": 9.51,
+        "yr1995": 11.34,
+        "label": "Los Angeles",
+        "yr2005": 12.3,
+        "yr2000": 11.81,
+        "yr2010": 12.76,
+        "id": 12
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.38764950000001,
+          39.9065704
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "yr1970": 4.43,
+        "city": "Beijing",
+        "yr1990": 6.79,
+        "yr1985": 6.02,
+        "yr1975": 4.83,
+        "yr1980": 5.37,
+        "yr1995": 8.14,
+        "label": "Beijing",
+        "yr2005": 11.45,
+        "yr2000": 9.76,
+        "yr2010": 12.39,
+        "id": 13
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.1750107,
+          -22.9121609
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "yr1970": 6.64,
+        "city": "Rio_de_Janeiro",
+        "yr1990": 9.59,
+        "yr1985": 9.09,
+        "yr1975": 7.56,
+        "yr1980": 8.58,
+        "yr1995": 10.17,
+        "label": "Rio de Janeiro",
+        "yr2005": 11.37,
+        "yr2000": 10.8,
+        "yr2010": 11.95,
+        "id": 14
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.98368070000001,
+          14.58743
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "yr1970": 3.53,
+        "city": "Manila",
+        "yr1990": 7.97,
+        "yr1985": 6.89,
+        "yr1975": 5,
+        "yr1980": 5.95,
+        "yr1995": 9.4,
+        "label": "Manila",
+        "yr2005": 10.76,
+        "yr2000": 9.96,
+        "yr2010": 11.63,
+        "id": 15
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.5659943,
+          35.0763016
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "yr1970": 9.41,
+        "city": "Osaka_Kobe",
+        "yr1990": 11.04,
+        "yr1985": 10.35,
+        "yr1975": 9.84,
+        "yr1980": 9.99,
+        "yr1995": 11.05,
+        "label": "Osaka-Kobe",
+        "yr2005": 11.26,
+        "yr2000": 11.17,
+        "yr2010": 11.34,
+        "id": 16
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.17626949999999,
+          37.005100299999995
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "yr1970": 5.58,
+        "city": "Cairo",
+        "yr1990": 9.06,
+        "yr1985": 8.33,
+        "yr1975": 6.45,
+        "yr1980": 7.35,
+        "yr1995": 9.71,
+        "label": "Cairo",
+        "yr2005": 10.56,
+        "yr2000": 10.17,
+        "yr2010": 11,
+        "id": 17
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.3887601000000003,
+          6.4547099999999995
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "yr1970": 0,
+        "city": "Lagos",
+        "yr1990": 0,
+        "yr1985": 0,
+        "yr1975": 0,
+        "yr1980": 0,
+        "yr1995": 5.97,
+        "label": "Lagos",
+        "yr2005": 8.77,
+        "yr2000": 7.23,
+        "yr2010": 10.58,
+        "id": 18
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.615020799999996,
+          55.7569695
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "yr1970": 7.11,
+        "city": "Moscow",
+        "yr1990": 8.99,
+        "yr1985": 8.58,
+        "yr1975": 7.62,
+        "yr1980": 8.14,
+        "yr1995": 9.2,
+        "label": "Moscow",
+        "yr2005": 10.42,
+        "yr2000": 10,
+        "yr2010": 10.55,
+        "id": 19
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.985799800000002,
+          41.040958399999994
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "yr1970": 0,
+        "city": "Istanbul",
+        "yr1990": 6.55,
+        "yr1985": 5.41,
+        "yr1975": 0,
+        "yr1980": 4.4,
+        "yr1995": 7.67,
+        "label": "Istanbul",
+        "yr2005": 9.71,
+        "yr2000": 8.74,
+        "yr2010": 10.52,
+        "id": 20
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3412001,
+          48.856929799999996
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "yr1970": 8.35,
+        "city": "Paris",
+        "yr1990": 9.33,
+        "yr1985": 8.96,
+        "yr1975": 8.56,
+        "yr1980": 8.67,
+        "yr1995": 9.51,
+        "label": "Paris",
+        "yr2005": 10.11,
+        "yr2000": 9.74,
+        "yr2010": 10.49,
+        "id": 21
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.0164719,
+          37.5150185
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "yr1970": 5.31,
+        "city": "Seoul",
+        "yr1990": 10.54,
+        "yr1985": 9.55,
+        "yr1975": 6.81,
+        "yr1980": 8.26,
+        "yr1995": 10.26,
+        "label": "Seoul",
+        "yr2005": 9.83,
+        "yr2000": 9.92,
+        "yr2010": 9.77,
+        "id": 22
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.51934809999999,
+          29.550949100000004
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "yr1970": 0,
+        "city": "Chongqing",
+        "yr1990": 0,
+        "yr1985": 0,
+        "yr1975": 0,
+        "yr1980": 0,
+        "yr1995": 0,
+        "label": "Chongqing",
+        "yr2005": 0,
+        "yr2000": 0,
+        "yr2010": 9.4,
+        "id": 23
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8275223,
+          -6.1714902
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "yr1970": 3.92,
+        "city": "Jakarta",
+        "yr1990": 8.18,
+        "yr1985": 7.01,
+        "yr1975": 4.81,
+        "yr1980": 5.98,
+        "yr1995": 8.32,
+        "label": "Jakarta",
+        "yr2005": 8.79,
+        "yr2000": 8.39,
+        "yr2010": 9.21,
+        "id": 24
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.6324463,
+          41.8842506
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "yr1970": 7.11,
+        "city": "Chicago",
+        "yr1990": 7.37,
+        "yr1985": 7.29,
+        "yr1975": 7.16,
+        "yr1980": 7.22,
+        "yr1995": 7.84,
+        "label": "Chicago",
+        "yr2005": 8.82,
+        "yr2000": 8.33,
+        "yr2010": 9.2,
+        "id": 25
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.11878970000001,
+          22.556219100000003
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "yr1970": 0,
+        "city": "Shenzhen",
+        "yr1990": 0,
+        "yr1985": 0,
+        "yr1975": 0,
+        "yr1980": 0,
+        "yr1995": 0,
+        "label": "Shenzhen",
+        "yr2005": 7.93,
+        "yr2000": 0,
+        "yr2010": 9.01,
+        "id": 26
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0268021,
+          -12.0561399
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "yr1970": 0,
+        "city": "Lima",
+        "yr1990": 5.84,
+        "yr1985": 5.12,
+        "yr1975": 3.7,
+        "yr1980": 4.44,
+        "yr1995": 6.58,
+        "label": "Lima",
+        "yr2005": 8.08,
+        "yr2000": 7.29,
+        "yr2010": 8.94,
+        "id": 27
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.2552338,
+          23.113370899999996
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "yr1970": 0,
+        "city": "Guangzhou",
+        "yr1990": 0,
+        "yr1985": 0,
+        "yr1975": 0,
+        "yr1980": 0,
+        "yr1995": 0,
+        "label": "Guangzhou",
+        "yr2005": 8.16,
+        "yr2000": 7.33,
+        "yr2010": 8.88,
+        "id": 28
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.2895298,
+          -4.312220099999999
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "yr1970": 0,
+        "city": "Kinshasa",
+        "yr1990": 0,
+        "yr1985": 0,
+        "yr1975": 0,
+        "yr1980": 0,
+        "yr1995": 0,
+        "label": "Kinshasa",
+        "yr2005": 0,
+        "yr2000": 0,
+        "yr2010": 8.75,
+        "id": 29
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.12719,
+          51.5064316
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "yr1970": 7.51,
+        "city": "London",
+        "yr1990": 7.65,
+        "yr1985": 7.67,
+        "yr1975": 7.55,
+        "yr1980": 7.66,
+        "yr1995": 7.91,
+        "label": "London",
+        "yr2005": 8.51,
+        "yr2000": 8.22,
+        "yr2010": 8.63,
+        "id": 30
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.2005692,
+          39.1449394
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "yr1970": 3.32,
+        "city": "Tianjin",
+        "yr1990": 0,
+        "yr1985": 0,
+        "yr1975": 0,
+        "yr1980": 0,
+        "yr1995": 0,
+        "label": "Tianjin",
+        "yr2005": 7.28,
+        "yr2000": 6.67,
+        "yr2010": 0,
+        "id": 31
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1869659,
+          22.3361568
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "yr1970": 3.46,
+        "city": "Hong_Kong",
+        "yr1990": 5.68,
+        "yr1985": 5.07,
+        "yr1975": 3.94,
+        "yr1980": 4.61,
+        "yr1995": 6.21,
+        "label": "Hong Kong",
+        "yr2005": 0,
+        "yr2000": 6.67,
+        "yr2010": 0,
+        "id": 32
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.4146843,
+          35.6895409
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "yr1970": 3.29,
+        "city": "Tehran",
+        "yr1990": 6.36,
+        "yr1985": 5.84,
+        "yr1975": 4.27,
+        "yr1980": 5.08,
+        "yr1995": 6.69,
+        "label": "Tehran",
+        "yr2005": 0,
+        "yr2000": 6.88,
+        "yr2010": 0,
+        "id": 33
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.188591,
+          13.0503302
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "yr1970": 0,
+        "city": "Chennai",
+        "yr1990": 5.34,
+        "yr1985": 4.75,
+        "yr1975": 0,
+        "yr1980": 0,
+        "yr1995": 5.84,
+        "label": "Chennai",
+        "yr2005": 0,
+        "yr2000": 0,
+        "yr2010": 0,
+        "id": 34
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5048294,
+          13.7533503
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "yr1970": 0,
+        "city": "Bangkok",
+        "yr1990": 5.89,
+        "yr1985": 5.28,
+        "yr1975": 3.84,
+        "yr1980": 4.72,
+        "yr1995": 6.11,
+        "label": "Bangkok",
+        "yr2005": 0,
+        "yr2000": 0,
+        "yr2010": 0,
+        "id": 35
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.3060303,
+          59.9331818
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "yr1970": 3.98,
+        "city": "Saint_Petersburg",
+        "yr1990": 4.99,
+        "yr1985": 4.84,
+        "yr1975": 4.33,
+        "yr1980": 4.64,
+        "yr1995": 0,
+        "label": "St. Petersburg",
+        "yr2005": 0,
+        "yr2000": 0,
+        "yr2010": 0,
+        "id": 36
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.5631498999999995,
+          40.451400799999995
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "yr1970": 3.52,
+        "city": "Madrid",
+        "yr1990": 0,
+        "yr1985": 0,
+        "yr1975": 3.89,
+        "yr1980": 4.25,
+        "yr1995": 0,
+        "label": "Madrid",
+        "yr2005": 0,
+        "yr2000": 0,
+        "yr2010": 0,
+        "id": 37
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.1624527,
+          39.9522781
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "yr1970": 4.4,
+        "city": "Philadelphia",
+        "yr1990": 0,
+        "yr1985": 0,
+        "yr1975": 4.47,
+        "yr1980": 4.54,
+        "yr1995": 0,
+        "label": "Philadelphia",
+        "yr2005": 0,
+        "yr2000": 0,
+        "yr2010": 0,
+        "id": 38
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.04792020000001,
+          42.331680299999995
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "yr1970": 3.97,
+        "city": "Detroit",
+        "yr1990": 0,
+        "yr1985": 0,
+        "yr1975": 3.89,
+        "yr1980": 0,
+        "yr1995": 0,
+        "label": "Detroit",
+        "yr2005": 0,
+        "yr2000": 0,
+        "yr2010": 0,
+        "id": 39
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.759455,
+          35.682839
+        ]
+      },
+      "properties": {
+        "City": "Tokyo",
+        "Pop_1985": 30.3,
+        "Pop_1990": 32.53,
+        "Pop_1995": 33.59,
+        "Pop_2000": 34.45,
+        "Pop_2005": 35.62,
+        "Pop_2010": 36.83,
+        "Pop_2015": 38,
+        "latitude": 35.682839,
+        "longitude": 139.759455
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.221939,
+          28.651718
+        ]
+      },
+      "properties": {
+        "City": "Delhi",
+        "Pop_1985": 7.33,
+        "Pop_1990": 9.73,
+        "Pop_1995": 12.41,
+        "Pop_2000": 15.73,
+        "Pop_2005": 18.67,
+        "Pop_2010": 21.94,
+        "Pop_2015": 25.7,
+        "latitude": 28.651718,
+        "longitude": 77.221939
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.488892,
+          31.225344
+        ]
+      },
+      "properties": {
+        "City": "Shanghai",
+        "Pop_1985": 6.85,
+        "Pop_1990": 7.82,
+        "Pop_1995": 10.45,
+        "Pop_2000": 13.96,
+        "Pop_2005": 16.76,
+        "Pop_2010": 19.98,
+        "Pop_2015": 23.74,
+        "latitude": 31.225344,
+        "longitude": 121.488892
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.6333,
+          -23.5505
+        ]
+      },
+      "properties": {
+        "City": "Sao Paulo",
+        "Pop_1985": 13.39,
+        "Pop_1990": 14.78,
+        "Pop_1995": 15.91,
+        "Pop_2000": 17.01,
+        "Pop_2005": 18.29,
+        "Pop_2010": 19.66,
+        "Pop_2015": 21.07,
+        "latitude": -23.5505,
+        "longitude": -46.6333
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.835238,
+          18.938754
+        ]
+      },
+      "properties": {
+        "City": "Mumbai (Bombay)",
+        "Pop_1985": 10.39,
+        "Pop_1990": 12.44,
+        "Pop_1995": 14.31,
+        "Pop_2000": 16.37,
+        "Pop_2005": 17.89,
+        "Pop_2010": 19.42,
+        "Pop_2015": 21.04,
+        "latitude": 18.938754,
+        "longitude": 72.835238
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1332,
+          19.4326
+        ]
+      },
+      "properties": {
+        "City": "Ciudad de M√©xico (Mexico City)",
+        "Pop_1985": 14.28,
+        "Pop_1990": 15.64,
+        "Pop_1995": 17.02,
+        "Pop_2000": 18.46,
+        "Pop_2005": 19.28,
+        "Pop_2010": 20.13,
+        "Pop_2015": 21,
+        "latitude": 19.4326,
+        "longitude": -99.1332
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.391248,
+          39.905963
+        ]
+      },
+      "properties": {
+        "City": "Beijing",
+        "Pop_1985": 6.02,
+        "Pop_1990": 6.79,
+        "Pop_1995": 8.31,
+        "Pop_2000": 10.16,
+        "Pop_2005": 12.81,
+        "Pop_2010": 16.19,
+        "Pop_2015": 20.38,
+        "latitude": 39.905963,
+        "longitude": 116.391248
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5022,
+          34.6937
+        ]
+      },
+      "properties": {
+        "City": "Kinki M.M.A. (Osaka)",
+        "Pop_1985": 17.58,
+        "Pop_1990": 18.39,
+        "Pop_1995": 18.94,
+        "Pop_2000": 18.66,
+        "Pop_2005": 18.76,
+        "Pop_2010": 19.49,
+        "Pop_2015": 20.24,
+        "latitude": 34.6937,
+        "longitude": 135.5022
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.243666,
+          30.048819
+        ]
+      },
+      "properties": {
+        "City": "Al-Qahirah (Cairo)",
+        "Pop_1985": 8.33,
+        "Pop_1990": 9.89,
+        "Pop_1995": 11.96,
+        "Pop_2000": 13.63,
+        "Pop_2005": 15.17,
+        "Pop_2010": 16.9,
+        "Pop_2015": 18.77,
+        "latitude": 30.048819,
+        "longitude": 31.243666
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0953,
+          43.0467
+        ]
+      },
+      "properties": {
+        "City": "New York-Newark",
+        "Pop_1985": 15.83,
+        "Pop_1990": 16.09,
+        "Pop_1995": 16.94,
+        "Pop_2000": 17.81,
+        "Pop_2005": 18.09,
+        "Pop_2010": 18.37,
+        "Pop_2015": 18.59,
+        "latitude": 43.0467,
+        "longitude": -77.0953
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.378814,
+          23.759357
+        ]
+      },
+      "properties": {
+        "City": "Dhaka",
+        "Pop_1985": 4.66,
+        "Pop_1990": 6.62,
+        "Pop_1995": 8.33,
+        "Pop_2000": 10.28,
+        "Pop_2005": 12.33,
+        "Pop_2010": 14.73,
+        "Pop_2015": 17.6,
+        "latitude": 23.759357,
+        "longitude": 90.378814
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          67.031129,
+          24.86678
+        ]
+      },
+      "properties": {
+        "City": "Karachi",
+        "Pop_1985": 6.03,
+        "Pop_1990": 7.15,
+        "Pop_1995": 8.47,
+        "Pop_2000": 10.03,
+        "Pop_2005": 11.89,
+        "Pop_2010": 14.08,
+        "Pop_2015": 16.62,
+        "latitude": 24.86678,
+        "longitude": 67.031129
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.437076,
+          -34.607562
+        ]
+      },
+      "properties": {
+        "City": "Buenos Aires",
+        "Pop_1985": 9.96,
+        "Pop_1990": 10.51,
+        "Pop_1995": 11.39,
+        "Pop_2000": 12.41,
+        "Pop_2005": 13.33,
+        "Pop_2010": 14.25,
+        "Pop_2015": 15.18,
+        "latitude": -34.607562,
+        "longitude": -58.437076
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.347602,
+          22.567746
+        ]
+      },
+      "properties": {
+        "City": "Kolkata (Calcutta)",
+        "Pop_1985": 9.95,
+        "Pop_1990": 10.89,
+        "Pop_1995": 11.92,
+        "Pop_2000": 13.06,
+        "Pop_2005": 13.7,
+        "Pop_2010": 14.28,
+        "Pop_2015": 14.86,
+        "latitude": 22.567746,
+        "longitude": 88.347602
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.965165,
+          41.009633
+        ]
+      },
+      "properties": {
+        "City": "Istanbul",
+        "Pop_1985": 5.41,
+        "Pop_1990": 6.55,
+        "Pop_1995": 7.67,
+        "Pop_2000": 8.74,
+        "Pop_2005": 10.51,
+        "Pop_2010": 12.7,
+        "Pop_2015": 14.16,
+        "latitude": 41.009633,
+        "longitude": 28.965165
+      }
+    }
+  ]
+}
