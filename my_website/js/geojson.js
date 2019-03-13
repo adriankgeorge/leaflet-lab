@@ -19,7 +19,18 @@ function createMap(){
 
 $(document).ready(createMap);
 
+function createPopup(properties, attribute, layer, radius){
+    //add city to popup content string
+    var popupContent = "<p><b>Site ID:</b> " + properties.DatasetID + "</p>";
+    //add formatted attribute to panel content string
+    var year = attribute.substring(2);
+    popupContent += "<p><b>Spruce Percent " + year + " years ago:</b> " + Math.floor(properties[attribute]*100) / 100 + "%</p>";
 
+    //replace the layer popup
+    layer.bindPopup(popupContent, {
+        offset: new L.Point(0,-radius)
+    });
+};
 
 //calculate the radius of each proportional symbol
 function calcPropRadius(attribute) {
@@ -55,13 +66,8 @@ function pointToLayer(feature, latlng, attributes){
     //create circle marker layer
     var layer = L.circleMarker(latlng, options);
 
-    //build popup content string
-    var popupContent = "<p><b>Site ID:</b> " + feature.properties.DatasetID + "</p><p><b>" + attribute + ":</b> " + feature.properties[attribute] + "</p>";
-
-    //bind the popup to the circle marker
-    layer.bindPopup(popupContent, {
-      offset: new L.Point(0,-options.radius) // Offset popup from symbol
-    });
+    // Calls popup function
+    createPopup(feature.properties, attribute, layer, options.radius);
 
     //return the circle marker to the L.geoJson pointToLayer option
     return layer;
@@ -84,9 +90,42 @@ function createPropSymbols(data, map, attributes){
 //1. Create slider widget
 // Create new sequence controls
 function createSequenceControls(map, attributes){
+  var SequenceControl = L.Control.extend({
+      options: {
+          position: 'bottomleft'
+      },
+      onAdd: function (map) {
+                  // create the control container div with a particular class name
+                  var container = L.DomUtil.create('div', 'sequence-control-container');
+                  //create range input element (slider)
+                  $(container).append('<input class="range-slider" type="range">');
+                  // ... initialize other DOM elements, add listeners, etc.
 
+                  //2. Create skip buttons
+                  $(container).append('<button class="skip" id="reverse">Reverse</button>');
+                  $(container).append('<button class="skip" id="forward">Skip</button>');
+
+
+
+                  //disable any mouse event listeners for the container
+L.DomEvent        .disableClickPropagation(container);
+                  return container;
+              }
+          });
+
+          map.addControl(new SequenceControl());
+          //set slider attributes
+          $('.range-slider').attr({
+              max: 29,
+              min: 0,
+              value: 0,
+              step: 1
+            });
+            // Adds button images
+            $('#reverse').html('<img src="img/back.png">');
+            $('#forward').html('<img src="img/next.png">');
     //create range input element (slider)
-    $('#panel').append('<input class="range-slider" type="range">');
+    //$('#panel').append('<input class="range-slider" type="range">');
     //Step 5: click listener for buttons
     $('.skip').click(function(){
         //get the old index value
@@ -101,7 +140,7 @@ function createSequenceControls(map, attributes){
             index--;
             //Step 7: if past the first attribute, wrap around to last attribute
             index = index < 0 ? 29 : index;
-      };
+        };
 
       //Step 8: update slider
       $('.range-slider').val(index);
@@ -120,21 +159,6 @@ function createSequenceControls(map, attributes){
 
 };
 
-//set slider attributes
-$('.range-slider').attr({
-    max: 29,
-    min: 0,
-    value: 0,
-    step: 1
-});
-//2. Create skip buttons
-$('#panel').append('<button class="skip" id="reverse">Reverse</button>');
-$('#panel').append('<button class="skip" id="forward">Skip</button>');
-// Replace text with images on buttons
-$('#reverse').html('<img src="img/back.png">');
-$('#forward').html('<img src="img/next.png">');
-
-
 //Step 10: Resize proportional symbols according to new attribute values
 function updatePropSymbols(map, attribute){
     map.eachLayer(function(layer){
@@ -147,17 +171,9 @@ function updatePropSymbols(map, attribute){
             var radius = calcPropRadius(props[attribute]);
             layer.setRadius(radius);
 
-            //add city to popup content string
-            var popupContent = "<p><b>DatasetID:</b> " + props.DatasetID + "</p>";
+            // Calls popup function
+            createPopup(props, attribute, layer, radius);
 
-            //add formatted attribute to panel content string
-            var year = attribute[1];
-            popupContent += "<p><b>Pollen Percentage in" + year + ":</b> " + props[attribute] + "%</p>";
-
-            //replace the layer popup
-            layer.bindPopup(popupContent, {
-                offset: new L.Point(0,-radius)
-            });
         };
     });
 };
@@ -192,6 +208,107 @@ function processData(data){
 //10. Resize proportional symbols according to each feature's value for the new attribute
 
 
+//Calculate the max, mean, and min values for a given attribute
+function getCircleValues(map, attribute){
+    //start with min at highest possible and max at lowest possible number
+    var min = Infinity,
+        max = -Infinity;
+
+    map.eachLayer(function(layer){
+        //get the attribute value
+        if (layer.feature){
+            var attributeValue = Number(layer.feature.properties[attribute]);
+
+            //test for min
+            if (attributeValue < min){
+                min = attributeValue;
+            };
+
+            //test for max
+            if (attributeValue > max){
+                max = attributeValue;
+            };
+        };
+    });
+
+    //set mean
+    var mean = (max + min) / 2;
+
+    //return values as an object
+    return {
+        max: max,
+        mean: mean,
+        min: min
+    };
+};
+
+//Example 2.7 line 1...function to create the legend
+function createLegend(map, attributes){
+    var LegendControl = L.Control.extend({
+        options: {
+            position: 'bottomright'
+        },
+
+        onAdd: function (map) {
+            // create the control container with a particular class name
+            var container = L.DomUtil.create('div', 'legend-control-container');
+
+            //add temporal legend div to container
+            $(container).append('<div id="temporal-legend">')
+
+            //Step 1: start attribute legend svg string
+            var svg = '<svg id="attribute-legend" width="160px" height="60px">';
+
+            //array of circle names to base loop on
+            var circles = ["max", "mean", "min"];
+
+            //Step 2: loop to add each circle and text to svg string
+            for (var i=0; i<circles.length; i++){
+                //circle string
+                svg += '<circle class="legend-circle" id="' + circles[i] +
+                '" fill="#228B22" fill-opacity="0.8" stroke="#000000" cx="90"/>';
+            };
+
+            //close svg string
+            svg += "</svg>";
+
+            //add attribute legend svg to container
+            $(container).append(svg);
+
+            return container;
+        }
+    });
+
+    map.addControl(new LegendControl());
+
+    updateLegend(map, attributes[0]);
+};
+
+//Update the legend with new attribute
+function updateLegend(map, attribute){
+    //create content for legend
+    var year = attribute.substring(2);
+    var content = ("Spruce " + year + " years ago").bold();
+    var content = content.fontsize(4);
+
+    //replace legend content
+    $('#temporal-legend').html(content);
+
+    //get the max, mean, and min values as an object
+    var circleValues = getCircleValues(map, attribute);
+
+    for (var key in circleValues){
+    //get the radius
+    var radius = calcPropRadius(circleValues[key]);
+
+    //Step 3: assign the cy and r attributes
+    $('#'+key).attr({
+        cy: 59 - radius,
+        r: radius
+    });
+};
+};
+
 
 //Step 2: Import GeoJSON data
 function getData(map){
@@ -205,6 +322,7 @@ function getData(map){
           //call functions to create proportional symbols and sequence controls
           createPropSymbols(response, map, attributes);
           createSequenceControls(map, attributes);
+          createLegend(map,attributes)
         }
     });
 };

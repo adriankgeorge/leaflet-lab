@@ -1,10 +1,29 @@
 /* Stylesheet by Anna E. George, 2019 */
 
 /* defines map height, width, and display type*/
-#mapid { height: 600px;
+#mapid { height: 700px;
 				 width: 100%;
 				 display: inline-block;
 }
+
+.sequence-control-container {
+    width: 350px;
+    height: 30px;
+    background-color: rgba(255,255,255,0.8);
+    padding: 10px;
+    line-height: 45px;
+    text-align: center;
+    border: solid gray 1px;
+}
+
+.legend-control-container {
+    background-color: rgba(255,255,255,0.8);
+    padding: 10px;
+    line-height: 45px;
+    text-align: center;
+    border: solid gray 1px;
+}
+
 /* defines panel height, width, location within window and display type*/
 #panel {
     width: 60%;
@@ -14,6 +33,7 @@
 		text-align: center;
 		line-height: 42px;
 }
+
 
 /* sets style for range slider, forward, and back button*/
 .range-slider {
