@@ -162,7 +162,7 @@ L.DomEvent        .disableClickPropagation(container);
 //Step 10: Resize proportional symbols according to new attribute values
 function updatePropSymbols(map, attribute){
     map.eachLayer(function(layer){
-        if (layer.feature && layer.feature.properties[attribute]){
+        if (layer.feature){
             //update the layer style and popup
             //access feature properties
             var props = layer.feature.properties;
@@ -260,13 +260,19 @@ function createLegend(map, attributes){
             var svg = '<svg id="attribute-legend" width="160px" height="60px">';
 
             //array of circle names to base loop on
-            var circles = ["max", "mean", "min"];
+            var circles = {
+              max: 20,
+              mean: 40,
+              min: 60
+          };
 
-            //Step 2: loop to add each circle and text to svg string
-            for (var i=0; i<circles.length; i++){
+            //loop to add each circle and text to svg string
+            for (var circle in circles){
                 //circle string
-                svg += '<circle class="legend-circle" id="' + circles[i] +
-                '" fill="#228B22" fill-opacity="0.8" stroke="#000000" cx="90"/>';
+                svg += '<circle class="legend-circle" id="' + circle + '" fill="#228B22" fill-opacity="0.8" stroke="#000000" cx="30"/>';
+
+                //text string
+                svg += '<text id="' + circle + '-text" x="65" y="' + circles[circle] + '"></text>';
             };
 
             //close svg string
@@ -288,8 +294,7 @@ function createLegend(map, attributes){
 function updateLegend(map, attribute){
     //create content for legend
     var year = attribute.substring(2);
-    var content = ("Spruce " + year + " years ago").bold();
-    var content = content.fontsize(4);
+    var content = ("Spruce " + year + " years ago").bold().fontsize(4);
 
     //replace legend content
     $('#temporal-legend').html(content);
@@ -298,14 +303,17 @@ function updateLegend(map, attribute){
     var circleValues = getCircleValues(map, attribute);
 
     for (var key in circleValues){
-    //get the radius
-    var radius = calcPropRadius(circleValues[key]);
+      //get the radius
+      var radius = calcPropRadius(circleValues[key]);
 
-    //Step 3: assign the cy and r attributes
-    $('#'+key).attr({
+      //Step 3: assign the cy and r attributes
+      $('#'+key).attr({
         cy: 59 - radius,
         r: radius
-    });
+      });
+
+      //Step 4: add legend text
+      $('#'+key+'-text').text(Math.round(circleValues[key]*100)/100 + "%");
 };
 };
 
@@ -322,7 +330,8 @@ function getData(map){
           //call functions to create proportional symbols and sequence controls
           createPropSymbols(response, map, attributes);
           createSequenceControls(map, attributes);
-          createLegend(map,attributes)
+          createLegend(map,attributes);
+          updateLegend(map, attributes[0]);
         }
     });
 };
