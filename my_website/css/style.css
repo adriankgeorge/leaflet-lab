@@ -6,6 +6,7 @@
 				 display: inline-block;
 }
 
+/* Sets style for sequence control container*/
 .sequence-control-container {
     width: 350px;
     height: 30px;
@@ -16,6 +17,7 @@
     border: solid gray 1px;
 }
 
+/* Sets style for legend control container*/
 .legend-control-container {
     background-color: rgba(255,255,255,0.8);
     padding: 10px;
@@ -24,26 +26,22 @@
     border: solid gray 1px;
 }
 
-/* defines panel height, width, location within window and display type*/
-#panel {
-    width: 60%;
-    padding: 20px;
-    display: inline-block;
-    vertical-align: bottom;
-		text-align: center;
-		line-height: 42px;
+/* Sets style for title container*/
+.title-control-container {
+    background-color: rgba(255,255,255,0.8);
+    padding: 10px;
+    line-height: 25px;
+    text-align: center;
+    border: solid gray 1px;
 }
-
 
 /* sets style for range slider, forward, and back button*/
 .range-slider {
-    width: 50%;
+    width: 70%;
 }
-
 #forward {
     float: right;
 }
-
 #reverse {
     float: left;
 }

@@ -173,7 +173,7 @@ function updatePropSymbols(map, attribute){
 
             // Calls popup function
             createPopup(props, attribute, layer, radius);
-
+            updateLegend(map, attribute)
         };
     });
 };
@@ -243,7 +243,7 @@ function getCircleValues(map, attribute){
 };
 
 //Example 2.7 line 1...function to create the legend
-function createLegend(map, attributes){
+function createLegend(map, attributes, attribute){
     var LegendControl = L.Control.extend({
         options: {
             position: 'bottomright'
@@ -254,7 +254,7 @@ function createLegend(map, attributes){
             var container = L.DomUtil.create('div', 'legend-control-container');
 
             //add temporal legend div to container
-            $(container).append('<div id="temporal-legend">')
+            $(container).append('<div id="temporal-legend">');
 
             //Step 1: start attribute legend svg string
             var svg = '<svg id="attribute-legend" width="160px" height="60px">';
@@ -286,7 +286,6 @@ function createLegend(map, attributes){
     });
 
     map.addControl(new LegendControl());
-
     updateLegend(map, attributes[0]);
 };
 
@@ -294,8 +293,8 @@ function createLegend(map, attributes){
 function updateLegend(map, attribute){
     //create content for legend
     var year = attribute.substring(2);
-    var content = ("Spruce " + year + " years ago").bold().fontsize(4);
-
+    var content = ("Spruce " + year + " years ago").bold().fontsize(3);
+    var titlecontent = ("Where do the trees go?").bold().fontsize(4);
     //replace legend content
     $('#temporal-legend').html(content);
 
@@ -317,6 +316,41 @@ function updateLegend(map, attribute){
 };
 };
 
+function createTitleBox(map){
+    var TitleControl = L.Control.extend({
+        options: {
+            position: 'topright'
+        },
+
+        onAdd: function (map) {
+            // create container with a class name
+            var container = L.DomUtil.create('div', 'title-control-container');
+
+            //add title legend div to container
+            $(container).append('<div id="title-legend">')
+
+            //legend string
+            var svg = '<svg id="attribute-legend" width="80px" height="15px">';
+
+            var titlecontent = ("Where did the trees go?<\p>").bold().fontsize(4);
+            var explanation = ("Spruce trees have moved a lot since the last Ice Age!<br> Click the forward button to move through time and see <br> how the spruce pollen percentage changes.")
+
+            //replace legend content
+            $(container).append(titlecontent);
+            $(container).append(explanation);
+
+            //add attribute legend svg to container
+            $(container).append(svg);
+
+            return container;
+        }
+    });
+
+    map.addControl(new TitleControl());
+};
+
+
+
 
 //Step 2: Import GeoJSON data
 function getData(map){
@@ -332,6 +366,7 @@ function getData(map){
           createSequenceControls(map, attributes);
           createLegend(map,attributes);
           updateLegend(map, attributes[0]);
+          createTitleBox(map);
         }
     });
 };
