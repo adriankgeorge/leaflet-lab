@@ -1,2 +1,29 @@
 /* Stylesheet by Anna E. George, 2019 */
-		 #mapid { height: 600px; }
+
+/* defines map height, width, and display type*/
+#mapid { height: 600px;
+				 width: 100%;
+				 display: inline-block;
+}
+/* defines panel height, width, location within window and display type*/
+#panel {
+    width: 60%;
+    padding: 20px;
+    display: inline-block;
+    vertical-align: bottom;
+		text-align: center;
+		line-height: 42px;
+}
+
+/* sets style for range slider, forward, and back button*/
+.range-slider {
+    width: 50%;
+}
+
+#forward {
+    float: right;
+}
+
+#reverse {
+    float: left;
+}
